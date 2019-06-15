@@ -1,0 +1,41 @@
+{% extends 'base1.html' %}
+{% block content %}
+   <div class="col-md-6 offset-md-3">
+       <h2>Login</h2>
+    <p>Please fill the form below.</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="form-group">
+            {{ form.username.label_tag }}
+            <input type="text" class="form-control{% if form.username.errors %}is-invalid{% endif %}"
+                   id="id_username"
+                   name="username"
+                   placeholder="Your Username" value="{{ form.username.value|default:"" }}">
+            {% if form.username.errors %}
+                <div class="invalid-feedback">
+                    {{ form.username.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            {{ form.password.label_tag }}
+            <input
+                    type="password"
+                    class="form-control{% if form.password.errors %}is-invalid{% endif %}"
+                    id="id_password"
+                    name="password"
+                    placeholder="Your Password"
+                    value="{{ form.password.value|default:"" }}">
+            {% if form.password.errors %}
+                <div class="invalid-feedback">
+                    {{ form.password.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   <p><small><a href="#">click here</a>To change Your Password</small></p>
+    </div>
+
+{% endblock content %}
