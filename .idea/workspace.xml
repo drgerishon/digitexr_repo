@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1c9ca5b-453a-44e6-8dc4-ba7159e5f28e" name="Default Changelist" comment="" />
+    <list default="true" id="d1c9ca5b-453a-44e6-8dc4-ba7159e5f28e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base1.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +39,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="449">
+              <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -69,9 +81,9 @@
         <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/digi/settings.py" />
-        <option value="$PROJECT_DIR$/templates/base1.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/change_password.html" />
+        <option value="$PROJECT_DIR$/templates/base1.html" />
       </list>
     </option>
   </component>
@@ -92,6 +104,29 @@
             <path>
               <item name="digi" type="b2602c69:ProjectViewProjectNode" />
               <item name="digi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digi" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digi" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digi" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digi" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digi" type="b2602c69:ProjectViewProjectNode" />
@@ -178,7 +213,7 @@
       <workItem from="1560623479423" duration="248000" />
       <workItem from="1560653247483" duration="1369000" />
       <workItem from="1560660490216" duration="4070000" />
-      <workItem from="1560754195515" duration="1062000" />
+      <workItem from="1560754195515" duration="2530000" />
     </task>
     <task id="LOCAL-00001" summary="fff">
       <created>1560607026698</created>
@@ -194,14 +229,22 @@
       <option name="project" value="LOCAL" />
       <updated>1560758305038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fff">
+      <created>1560758846466</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560758846466</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27470000" />
+    <option name="totallyTimeSpent" value="28938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="0" width="1271" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="DB Browser" order="0" weight="0.25869894" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -212,7 +255,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="2" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.61680675" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.38655463" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32941177" />
       <window_info anchor="bottom" id="Python Console" order="6" />
@@ -318,13 +361,6 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -465,10 +501,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        <state relative-caret-position="449">
+          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
         </state>
       </provider>
     </entry>
