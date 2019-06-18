@@ -1,16 +1,49 @@
 {% extends "base1.html" %}
+{% load static %}
 {% block content %}
-     <!-- Page Content -->
-  <div class="container">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-      <h1 class="display-3"> {% if user.is_authenticated %} <p>Welcome, {{ user.username }}. Thanks for logging in.</p> {% else %} <p>Welcome, new user. Please log in.</p> {% endif %}</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-      <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
-    </header>
 
-    <!-- Page Features -->
+      <div class="bd-example">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'image/laptop.jpeg' %}" class="d-block w-100" height="400" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <h1 class="display-3"> {% if user.is_authenticated %} <p>Welcome, {{ user.username }}. Thanks for logging in.</p> {% else %} <p>Welcome, new user. Please log in.</p> {% endif %}</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'image/ingine.jpeg' %}" class="d-block w-100" height="400"alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <h1 class="display-3"> {% if user.is_authenticated %} <p>Welcome, {{ user.username }}. Thanks for logging in.</p> {% else %} <p>Welcome, new user. Please log in.</p> {% endif %}</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'image/tatu.jpeg' %}" class="d-block w-100" height="400" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <h1 class="display-3"> {% if user.is_authenticated %} <p>Welcome, {{ user.username }}. Thanks for logging in.</p> {% else %} <p>Welcome, new user. Please log in.</p> {% endif %}</h1>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    <br>
     <div class="row text-center">
 
       <div class="col-lg-3 col-md-6 mb-4">
@@ -67,5 +100,5 @@
 
     </div>
     <!-- /.row -->
-  </div>
+
 {% endblock content %}

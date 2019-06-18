@@ -8,5 +8,6 @@ app_name = 'contact'
 urlpatterns = [
     path("", views.ContactUsView.as_view(), name="contact", ),
     path("about-us/", TemplateView.as_view(template_name="contact/about_us.html"), name="about_us", ),
+    path("pricing/", TemplateView.as_view(template_name="contact/pricing.html"), name="pricing", ),
 
 ]

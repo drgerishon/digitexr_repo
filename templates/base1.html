@@ -2,19 +2,19 @@
 {% load static %}
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Main </title>
-
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href=" {% static 'css/heroic-features.css' %}" rel="stylesheet">
+    <link href="{% static 'css/pricing.css' %}" rel="stylesheet">
 
 </head>
 
@@ -29,29 +29,40 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'index' %}">Home
-              <span class="sr-only">(current)</span>
+          <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home<span class="sr-only">(current)</span>
             </a>
-          </li>
-            {% if user.is_authenticated %}
-                <li class="nav-item">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'accounts:logout' %}">Logout </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'accounts:edit_profile' %}">Edit Profile</a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'accounts:change_password' %}">Change Password</a>
+            {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Manage Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{% url 'accounts:edit_profile' %}">Edit Profile</a>
+                      <a class="dropdown-item" href="{% url 'accounts:change_password' %}">Change Password</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="{% url 'accounts:logout' %}">Logout </a>
+                    </div>
+                </li>
                 </li>
                 {% else %}
+
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'accounts:login' %}">Login</a>
+                    <a class="nav-link" href="{% url 'contact:contact' %}">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'accounts:register' %}">Register</a>
+                    <a class="nav-link" href="{% url 'contact:about_us' %}">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Drop
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{% url 'accounts:register' %}">Register</a>
+                      <a class="dropdown-item" href="{% url 'accounts:login' %}">Login</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="{% url 'contact:pricing' %}">Pricing</a>
+                    </div>
                 </li>
             {% endif %}
         </ul>
@@ -70,16 +81,13 @@
       {% endfor %}
   {% endif %}
 
-  <!-- /.container -->
+
 <br>
+  <div class="container">
       {% block content %}
-          <div class="container">
-
-
-          </div>
       {% endblock %}
+  </div>
 
-  <!-- Footer -->
   <br>
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -90,6 +98,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="{%static  'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{%static  'vendor/cour/cour.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
